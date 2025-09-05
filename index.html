@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMTIHON QIYIN EKAN</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <header>
+      <img src="image.png" alt="" class="flex justify-center mx-auto w-180 bg-base-100" />
+      <nav class="flex justify-center mt-20 mx-auto max-w-[90%] mb-5">
+        <input
+          type="text"
+          placeholder="Search"
+          class="input"
+          id="input"
+        />
+        <details class="dropdown">
+          <summary class="btn ">sort</summary>
+          <ul
+            class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+          >
+            <li><a id="az">a-z</a></li>
+            <li><a id="za">z-a</a></li>
+          </ul>
+        </details>
+        
+      </nav>
+    </header>
+
+    <main></main>
+    <div
+      id="mainCard"
+      class="flex flex-wrap gap-4 justify-center text-orange-900"
+    ></div>
+
+    <script  type="module" src="./movies.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
